@@ -1,0 +1,76 @@
+doctype html
+html
+	head
+		title startpage
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='refresh', content='300')
+		link(rel='stylesheet', type='text/css', href='styles/style.css')
+		script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js')
+		script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js')
+		script(type='text/javascript', src='js/script.js')
+	body
+		.contentContain
+			.circleOne(class='circle')
+				i(class='ion-android-laptop')
+			.circleTwo(class='circle')
+				i(class='ion-android-contacts')
+			.circleThree(class='circle')
+				i(class='ion-android-cart')
+			.circleFour(class='circle')
+				i(class='ion-university')
+			.circleFive(class='circle')
+				i(class='ion-cash')
+			.inputs
+				form(method='get', action='http://www.google.com/search', target='_blank')
+					input(type='text' name='q' class='search' placeholder='google')
+					button(type='submit')
+						i(class='ion-search')
+				form(method='get', action='http://www.kickass.to/usearch/', target='_blank')
+					input(type='text' name='q' class='search' placeholder='torrents')
+					button(type='submit')
+						i(class='ion-search')
+						
+			ul(class='weath')
+				li(id='weatherIcon', class='')
+				li(id='weather')
+		
+		.overlay
+
+		.modal(class='develop')
+			ul
+				li: a(href='http://codepen.io', target='_blank') codepen
+				li: a(href='https://github.com', target='_blank') github
+				li: a(href='https://developers.google.com', target='_blank') google developers
+				li: a(href='http://sitepoint.com', target='_blank') sitepoint
+				li: a(href='https://web-development.zeef.com', target='_blank') web dev resources
+				li: a(href='http://wwwhere.io', target='_blank') wwwhere
+
+		.modal(class='social')
+			ul
+				li: a(href='https://www.knackfortracks.com', target='_blank') knack for tracks
+				li: a(href='https://www.linkedin.com', target='_blank') linkedin
+				li: a(href='https://www.reddit.com', target='_blank') reddit
+				li: a(href='https://www.soundcloud.com', target='_blank') soundcloud
+				li: a(href='https://www.youtube.com', target='_blank') youtube
+
+		.modal(class='shop')
+			ul
+				li: a(href='https://www.amazon.com', target='_blank') amazon
+				li: a(href='https://www.groupon.com', target='_blank') groupon
+				li: a(href='http://www.gilt.com', target='_blank') gilt
+				li: a(href='https://www.jackthreads.com', target='_blank') jack threads
+				li: a(href='https://www.touchofmodern.com', target='_blank') touch of modern
+
+		.modal(class='learn')
+			ul
+				li: a(href='https://codecademy.com', target='_blank') codecademy
+				li: a(href='http://duolingo.com', target='_blank') duolingo
+				li: a(href='http://freecodecamp.com', target='_blank') free code camp
+				li: a(href='http://theodinproject.com', target='_blank') the odin project
+				li: a(href='http://udacity.com', target='_blank') udacity
+
+		.modal(class='finance')
+			ul
+				li: a(href='https://www.chase.com', target='_blank') chase
+				li: a(href='https://wallet.google.com', target='_blank') google wallet
+				li: a(href='https://mint.com', target='_blank') mint

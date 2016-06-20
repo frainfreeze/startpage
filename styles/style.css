@@ -1,0 +1,240 @@
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #112233;
+  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialised;
+  font-smoothing: antialiased;
+}
+
+.contentContain {
+  height: 50vh;
+  width: 70%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.contentContain .circle {
+  height: 7em;
+  width: 7em;
+  border-radius: 100%;
+  display: inline-block;
+  margin: 3%;
+  background: #ecf0f1;
+  color: #e74c3c;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.contentContain .circle:hover {
+  background: #e74c3c;
+}
+
+.contentContain .circle:nth-child(2) {
+  color: #e67e22;
+}
+
+.contentContain .circle:nth-child(2):hover {
+  background: #e67e22;
+}
+
+.contentContain .circle:nth-child(3) {
+  color: #3498db;
+}
+
+.contentContain .circle:nth-child(3):hover {
+  background: #3498db;
+}
+
+.contentContain .circle:nth-child(4) {
+  color: #2ecc71;
+}
+
+.contentContain .circle:nth-child(4):hover {
+  background: #2ecc71;
+}
+
+.contentContain .circle:nth-child(5) {
+  color: #9b59b6;
+}
+
+.contentContain .circle:nth-child(5):hover {
+  background: #9b59b6;
+}
+
+.contentContain .circle:hover {
+  color: #ecf0f1;
+}
+
+.contentContain .circle i {
+  font-size: 4em;
+  line-height: 1.9em;
+}
+
+.inputs {
+  margin-top: 1.5em;
+}
+
+.inputs .search {
+  width: 50%;
+  background: none;
+  padding: 1em;
+  margin: 0.8em;
+  border: none;
+  border-bottom: 1px solid #e74c3c;
+  color: #e74c3c;
+  letter-spacing: 1px;
+  transition: all 150ms ease-in-out;
+  transition-font-smoothing: antialiased;
+}
+
+.inputs .search:focus, .inputs .search:hover {
+  outline: none;
+  border-bottom: 1px solid #eb695c;
+}
+
+.inputs button[type='submit'] {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1em;
+  margin-left: -2em;
+  cursor: pointer;
+}
+
+.inputs button[type='submit']:focus {
+  outline: none;
+}
+
+.weath {
+  list-style: none;
+  color: #ecf0f1;
+  font-family: 'Lato', 'Source Sans Pro', 'Open Sans', 'sans-serif';
+  font-size: 2em;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 2em;
+}
+
+.weath li {
+  display: inline-block;
+  font-smoothing: antialiased;
+}
+
+.overlay, .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in-out;
+}
+
+.overlay.open, .modal.open {
+  pointer-events: auto;
+}
+
+.overlay.open {
+  opacity: 0.9;
+}
+
+.modal.open {
+  opacity: 1;
+}
+
+.overlay {
+  background: #0d1a28;
+}
+
+.modal {
+  height: 12.5em;
+  width: 20em;
+  margin: auto;
+  background: #ecf0f1;
+  text-align: center;
+  border-radius: 0.3em;
+}
+
+.modal ul {
+  list-style: none;
+}
+
+.modal ul li:nth-child(1) {
+  margin-top: 0.6em;
+}
+
+.modal ul li a {
+  display: block;
+  padding: .5em;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.modal ul li a:hover {
+  color: #ecf0f1;
+}
+
+.develop {
+  height: 14.7em;
+}
+
+.develop > ul > li > a {
+  color: #e74c3c;
+}
+
+.develop > ul > li > a:hover {
+  background: #e74c3c;
+}
+
+.social > ul > li > a {
+  color: #e67e22;
+}
+
+.social > ul > li > a:hover {
+  background: #e67e22;
+}
+
+.shop > ul > li > a {
+  color: #3498db;
+}
+
+.shop > ul > li > a:hover {
+  background: #3498db;
+}
+
+.learn > ul > li > a {
+  color: #2ecc71;
+}
+
+.learn > ul > li > a:hover {
+  background: #2ecc71;
+}
+
+.finance {
+  height: 8em;
+}
+
+.finance > ul > li > a {
+  color: #9b59b6;
+}
+
+.finance > ul > li > a:hover {
+  background: #9b59b6;
+}

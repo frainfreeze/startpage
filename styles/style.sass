@@ -1,0 +1,182 @@
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css)
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200)
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700)
+
+$bg: #112233
+$red: #e74c3c
+$blue: #3498db
+$white: #ecf0f1
+$green: #2ecc71
+$orange: #e67e22
+$purple: #9b59b6
+
+*
+	margin: 0
+	padding: 0
+
+body
+	background: $bg
+	font-family: 'Source Sans Pro', 'Open Sans', sans-serif
+	-webkit-font-smoothing: antialiased
+	-moz-font-smoothing: antialiased
+	-ms-font-smoothing: antialised
+	font-smoothing: antialiased
+
+.contentContain
+	height: 50vh
+	width: 70%
+	position: absolute
+	margin: auto
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	text-align: center
+
+	.circle
+		height: 7em
+		width: 7em
+		border-radius: 100%
+		display: inline-block
+		margin: 3%
+		background: $white
+		color: $red
+		transition: all 150ms ease-in-out
+		cursor: pointer
+		&:hover
+			background: $red
+		&:nth-child(2)
+			color: $orange
+			&:hover
+				background: $orange
+		&:nth-child(3)
+			color: $blue
+			&:hover
+				background: $blue
+		&:nth-child(4)
+			color: $green
+			&:hover
+				background: $green
+		&:nth-child(5)
+			color: $purple
+			&:hover
+				background: $purple
+		&:hover
+			color: $white
+		i
+			font-size: 4em
+			line-height: 1.9em
+
+.inputs
+	margin-top: 1.5em
+	.search
+		width: 50%
+		background: none
+		padding: 1em
+		margin: 0.8em
+		border: none
+      bottom: 1px solid $red
+		color: $red
+		letter-spacing: 1px
+		transition: all 150ms ease-in-out
+    font-smoothing: antialiased
+		&:focus, &:hover
+			outline: none
+			border-bottom: 1px solid lighten($red, 7%)
+	button[type='submit']
+		background: none
+		border: none
+		color: $red
+		font-size: 1em
+		margin-left: -2em
+		cursor: pointer
+		&:focus
+			outline: none
+
+.weath
+  list-style: none
+  color: $white
+  font:
+    family: 'Lato', 'Source Sans Pro', 'Open Sans', 'sans-serif'
+    size: 2em
+    weight: 300
+  position: absolute
+  left: 0
+  right: 0
+  margin-top: 2em
+  li
+    display: inline-block
+    font-smoothing: antialiased
+
+.overlay, .modal
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	opacity: 0
+	pointer-events: none
+	transition: all 300ms ease-in-out
+	&.open
+		pointer-events: auto
+.overlay.open
+	opacity: 0.9
+.modal.open
+	opacity: 1
+
+// overlay
+.overlay
+	background: darken($bg, 3%)
+
+
+// default modal styling
+.modal
+	height: 12.5em
+	width: 20em
+	margin: auto
+	background: $white
+	text-align: center
+	border-radius: 0.3em
+	ul
+		list-style: none
+		li
+			&:nth-child(1)
+				margin-top: 0.6em
+			a
+				display: block
+				padding: .5em
+				text-decoration: none
+				transition: all 200ms ease-in-out
+				&:hover
+					color: $white
+
+
+// unique colors for each modal
+.develop
+  height: 14.7em
+  > ul > li > a
+  	color: $red
+  	&:hover
+  		background: $red
+
+.social > ul > li > a
+	color: $orange
+	&:hover
+		background: $orange
+
+.shop > ul > li > a
+	color: $blue
+	&:hover
+		background: $blue
+
+.learn > ul > li > a
+	color: $green
+	&:hover
+		background: $green
+
+.finance
+	height: 8em
+	> ul > li > a
+  	color: $purple
+  	&:hover
+  		background: $purple
