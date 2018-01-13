@@ -1,8 +1,8 @@
-![Screeenshot](screenshot.png)
+![Screeenshot](normal.png)
 <p align="center">
-  <img src="2016-06-24_14-15-06.png">
+  <img src="text.png">
 </p>
 
 
 
-<!--- [Check it out!](http://start.kissr.com/ "Hurhurhur") --->
+[Check it out!](http://triglex.com/~frain/startpage)

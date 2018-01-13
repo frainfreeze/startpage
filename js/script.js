@@ -41,7 +41,7 @@ $('.js-geolocation').on('click', function() {
 
   // weather
   $.simpleWeather({
-    location: 'Rijeka, Croatia', //replace 'Rijeka, Croatia' with "location" (no quotes) to get auto location
+    location: 'zagreb', //replace 'Rijeka, Croatia' with "location" (no quotes) to get auto location
     woeid: '',
     unit: 'c', //f for american shit :>
     success: function(weather) {
