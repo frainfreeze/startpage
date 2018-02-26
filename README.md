@@ -1,8 +1,4 @@
-![Screeenshot](normal.png)
+![Screeenshot](https://vgy.me/Vyk4pP.gif)
 <p align="center">
-  <img src="text.png">
-</p>
-
-
 
 [Check it out!](http://triglex.com/~frain/startpage)
