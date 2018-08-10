@@ -62,6 +62,7 @@ var linkMenu = [
   ["Notes",             "https://frainfreeze.github.io/references/"],
 
   [svgSocial,                  "green",                                       "-HEAD-"], // Media
+  ["Media library",            "playlists.html"],  
   ["YouTube",                  "https://youtube.com"],
   ["Facebook",                 "https://fb.com"],
   ["Reddit",                   "https://reddit.com"],
